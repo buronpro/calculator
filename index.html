@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>buon</title>
+</head>
+<body>
+    
+  <form name="calculator">
+   
+      <table>
+    
+            <td  colspan="4"><input class="sublist" type="text" name="disblay" id="disblay" disabled placeholder="0"></td>
+     
+        
+          
+          <tr>
+             <td><input type="button" name="seven" value="7" onclick="calculator.disblay.value+= '7'"> </td>
+             <td><input type="button" name="eight" value="8" onclick="calculator.disblay.value+= '8'"></td> 
+             <td><input type="button" name="nine" value="9" onclick="calculator.disblay.value+= '9'"></td> 
+            <td><input type="button" name="times" class="operator" value="*" onclick="calculator.disblay.value+= '*'"></td> 
+          </tr>
+
+          <tr>
+            <td><input type="button" name="four" value="4" onclick="calculator.disblay.value+= '4'"> </td>
+            <td><input type="button" name="five" value="5" onclick="calculator.disblay.value+= '5'"></td> 
+            <td><input type="button" name="six" value="6" onclick="calculator.disblay.value+= '6'"></td> 
+           <td><input type="button" name="minus" class="operator" value="-" onclick="calculator.disblay.value+= '-'"></td> 
+         </tr>
+
+         <tr>
+            <td><input type="button" name="one" value="1" onclick="calculator.disblay.value+= '1'"> </td>
+            <td><input type="button" name="two" value="2" onclick="calculator.disblay.value+= '2'"></td> 
+            <td><input type="button" name="three" value="3" onclick="calculator.disblay.value+= '3'"></td> 
+           <td><input type="button" name="plus" class="operator" value="+" onclick="calculator.disblay.value+= '+'"></td> 
+         </tr>
+
+         <tr>
+            <td><input  type="button" name="clear" value="clear" onclick="calculator.disblay.value+= ''"> </td>
+            <td><input type="button" name="zero" value="0" onclick="calculator.disblay.value+= '0'"></td> 
+            <td><input type="button" name="doit" class="operator" value="=" onclick="calculator.disblay.value = eval(caculator.disblay.value)"></td> 
+           <td><input type="button" name="div" class="operator" value="/" onclick="calculator.disblay.value+= '/'"></td> 
+         </tr>
+      </table>
+  </form>
+
+</body>
+</html>
